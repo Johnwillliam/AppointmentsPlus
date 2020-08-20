@@ -8,6 +8,8 @@ Author: WPMU DEV / Michael T
 Author URI: http://premium.wpmudev.org/
 Textdomain: appointments
 WDP ID: 679841
+GitHub Plugin URI: afragen/github-updater
+GitHub Plugin URI: https://github.com/afragen/github-updater
 */
 
 /*
