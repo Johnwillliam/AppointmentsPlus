@@ -19,7 +19,7 @@ function _appointments_get_admin_notice( $slug ) {
 			_x( '%s have changed on version 1.7. If you have been using Google Calendar prior to 1.7 please review your settings.', 'Google Calendar Settings admin notice fo 1.7 upgrade.', 'appointments' ),
 			'<a href="' . esc_url( $gcal_tab_url ) . '">' . __( 'Google Calendar Settings', 'appointments' ) . '</a>'
 		),
-		'Test notification!!!!!'
+		sprintf('Test notification!!!!!')
 	);
 
 	return isset( $notices[ $slug ] ) ? $notices[ $slug ] : false;
