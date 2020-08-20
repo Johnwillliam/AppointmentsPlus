@@ -6,4 +6,3 @@ tmp/
 .idea
 npm-debug.log
 log.log
-languages/*.mo
