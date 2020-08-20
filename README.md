@@ -1,16 +1,8 @@
 # Appointments+
 
-**INACTIVE NOTICE: This plugin is unsupported by WPMUDEV, we've published it here for those technical types who might want to fork and maintain it for their needs.**
-
-## Translations
-
-Translation files can be found at https://github.com/wpmudev/translations
-
 ## Take control of scheduling and calendar management for your business with Appointments +.
 
 Let your clients check availability, choose a location, select a service provider, book an appointment and make a deposit on your website. 
-
-![provider-735x470](https://premium.wpmudev.org/wp-content/uploads/2012/09/provider-735x470.jpg)
 
  Get users comfortable with your team before they ever schedule an appointment.
 
