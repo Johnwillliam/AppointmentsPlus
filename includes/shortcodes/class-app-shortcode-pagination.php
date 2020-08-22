@@ -87,7 +87,7 @@ if ( ! class_exists( 'App_Shortcode_Pagination' ) ) {
 			}
 
 			$hash = ! empty( $args['anchors'] ) && (int) $args['anchors']
-				? '#app_schedule'
+				? '#app_workers_dropdown_title'
 				: '';
 
 			ob_start();
@@ -122,12 +122,12 @@ if ( ! class_exists( 'App_Shortcode_Pagination' ) ) {
 			<div class="appointments-pagination">
 				<?php if ( $prev > $prev_min ): ?>
 					<div class="<?php echo apply_filters( 'appointments_pagination_shortcode_previous_class', 'previous' ); ?>">
-						<a href="<?php echo esc_url( add_query_arg( "wcalendar", $prev ) . $hash ); ?>">&laquo; <?php echo $month_week_previous; ?></a>
+						<a href="<?php echo esc_url( add_query_arg( "wcalendar", $prev ) . $hash ); ?>"><button type="button" class="btn btn-secondary"><?php echo $month_week_previous; ?></button></a>
 					</div>
 				<?php endif; ?>
 				<?php if ( $next < $next_max ): ?>
 					<div class="<?php echo apply_filters( 'appointments_pagination_shortcode_next_class', 'next' ); ?>">
-						<a href="<?php echo esc_url( add_query_arg( "wcalendar", $next ) . $hash ); ?>"><?php echo $month_week_next; ?> &raquo;</a>
+						<a href="<?php echo esc_url( add_query_arg( "wcalendar", $next ) . $hash ); ?>"><button type="button" class="btn btn-secondary"><?php echo $month_week_next; ?></button></a>
 					</div>
 				<?php endif; ?>
 				<div style="clear:both"></div>

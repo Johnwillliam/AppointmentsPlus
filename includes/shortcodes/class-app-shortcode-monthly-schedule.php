@@ -266,7 +266,7 @@ if ( ! class_exists( 'App_Shortcode_Monthly_Schedule' ) ) {
 
 			ob_start();
 			?>
-			<div class="appointments-wrapper">
+			<div class="appointments-wrapper" id="appointments-wrapper">
 				<?php if ( ! $params['has_worker'] && ! empty( $params['require_provider'] ) ): ?>
 					<?php echo ! empty( $params['required_message'] ) ? $params['required_message'] : __( 'Please, select a service provider.', 'appointments' ); ?>
 				<?php elseif ( ! $params['has_service'] && ! empty( $params['require_service'] ) ): ?>

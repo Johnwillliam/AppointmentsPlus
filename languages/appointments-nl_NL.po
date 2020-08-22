@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: Appointments +\n"
 "Report-Msgid-Bugs-To: https://wpmudev.org\n"
 "POT-Creation-Date: 2019-01-15 11:19:54+00:00\n"
-"PO-Revision-Date: 2020-08-22 13:46+0200\n"
+"PO-Revision-Date: 2020-08-22 18:32+0200\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -5905,7 +5905,7 @@ msgstr "Google Cal label"
 
 #: includes/shortcodes/class-app-shortcode-confirmation.php:73
 msgid "Add to personal Google Calendar"
-msgstr "Ga naar Google Calendar en voeg afspraak toe."
+msgstr " Voeg toe aan uw persoonlijke Google Calendar"
 
 #: includes/shortcodes/class-app-shortcode-confirmation.php:74
 msgid ""

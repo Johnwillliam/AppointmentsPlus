@@ -173,7 +173,7 @@ if ( ! class_exists( 'Appointments' ) ) {
 			// Other default settings
 			$this->script = $this->uri = $this->error_url = '';
 			$this->location = $this->service = $this->worker = 0;
-			$this->gcal_image = '<img src="' . $this->plugin_url . '/images/gc_button1.gif" />';
+			$this->gcal_image = '<img id="google-calendar-icon-image-label" src="' . $this->plugin_url . '/images/google-calendar-icon.png" />';
 			$this->locale_errlocale_error = false;
 
 			// Create a salt, if it doesn't exist from the previous installation
@@ -1960,7 +1960,7 @@ if ( ! class_exists( 'Appointments' ) ) {
 				'facebook-app_id'			=> '',
 				'twitter-app_id'			=> '',
 				'twitter-app_secret'		=> '',
-				'show_legend'				=> 'yes',
+				'show_legend'				=> 'no',
 				'gcal'						=> 'yes',
 				'gcal_location'				=> '',
 				'color_set'					=> 1,
