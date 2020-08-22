@@ -1926,7 +1926,7 @@ if ( ! class_exists( 'Appointments' ) ) {
 		function localization() {
 			// Load up the localization file if we're using WordPress in a different language
 			// Place it in Appointments+'s "languages" folder and name it "appointments-[value in wp-config].mo"
-			load_plugin_textdomain( 'appointments', false, '/appointments-master/languages/' );
+			load_plugin_textdomain( 'appointments', false, '/AppointmentsPlus/languages/' );
 		}
 
 		/**

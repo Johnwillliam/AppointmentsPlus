@@ -132,9 +132,7 @@ table.appointments-legend-table  td{
 .app_form_container{padding:20px;margin:10px;text-align:left;}
 .appointments_login{margin-bottom:0.6em; border:none;}
 .app_or{font-size:16px;margin:10px 0;letter-spacing: 1px;}
-.app_inner1{}
 .app_inner2{ margin-bottom: 0;}
-.app_inner3{}
 .app_login_submit{display:none;}
 .app_login_submit input{margin-right:10px;width:100px;}
 .app_wait_img img{border:none;}
@@ -166,7 +164,6 @@ a.appointments-login_link-cancel, .app_submit_btn {
     display: inline-block;
     background-color: #f6f6f6;
     background-repeat: no-repeat;
-    /* font-family: Lucida Grande, Helvetica Neue, Helvetica, Arial; */
     text-shadow: 0 1px 0 #ffffff;
     background: #f8f8f8; /* Old browsers */
     background: -moz-linear-gradient(top,  #f8f8f8 0%, #eae9e9 100%); /* FF3.6+ */
@@ -372,7 +369,6 @@ a.appointments-register_link-wordpress {
 }
 
 a.appointments-login_link-facebook, a.appointments-login_link-twitter, a.appointments-login_link-wordpress, a.appointments-register_link-wordpress {
-    /* font-family:  Lucida Grande, Helvetica Neue, Helvetica, Arial; */
     text-shadow: 0 1px 0px rgba(0,0,0,0.4);
     font-weight: normal;
 }
@@ -423,7 +419,6 @@ added css 20 Aug, @victor */
     text-align: center;
     text-transform: none;
     font-size: 1em;
-    /* font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; */
     font-weight: 200;
     border: 1px solid #d0d0d0;
     color: #474747;
@@ -441,8 +436,7 @@ added css 20 Aug, @victor */
     content: '\00D7';
     position: relative;
     text-align: center;
-    vertical-align: middle;
-    /* font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; */
+    /* vertical-align: middle; */
     font-weight: 200;
     font-size: 2.1em;
     display: block;
@@ -604,12 +598,7 @@ table.tablesorter thead tr .header {
     background-position: center right;
     cursor: pointer;
 }
-table.tablesorter thead tr .headerSortUp {
-    /*background-image: url(../images/asc.gif); No such thing*/
-}
-table.tablesorter thead tr .headerSortDown {
-    /*background-image: url(../images/desc.gif); No such thing*/
-}
+
 table.tablesorter thead tr .headerSortDown, table.tablesorter thead tr .headerSortUp {
     opacity: 0.5;
 }
@@ -680,10 +669,10 @@ table.tablesorter thead tr .headerSortDown, table.tablesorter thead tr .headerSo
     background-color:#449e74 !important;
 }
 
-.appointments-field-customer_gcal {
+#appointments-field-customer_gcal {
     margin-left: 10px;
 }
 
 * {
-    font-family: "Courier", Courier, monospace;
+    font-family: Helvetica;
 }
