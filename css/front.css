@@ -166,7 +166,7 @@ a.appointments-login_link-cancel, .app_submit_btn {
     display: inline-block;
     background-color: #f6f6f6;
     background-repeat: no-repeat;
-    font-family: Lucida Grande, Helvetica Neue, Helvetica, Arial;
+    /* font-family: Lucida Grande, Helvetica Neue, Helvetica, Arial; */
     text-shadow: 0 1px 0 #ffffff;
     background: #f8f8f8; /* Old browsers */
     background: -moz-linear-gradient(top,  #f8f8f8 0%, #eae9e9 100%); /* FF3.6+ */
@@ -372,7 +372,7 @@ a.appointments-register_link-wordpress {
 }
 
 a.appointments-login_link-facebook, a.appointments-login_link-twitter, a.appointments-login_link-wordpress, a.appointments-register_link-wordpress {
-    font-family:  Lucida Grande, Helvetica Neue, Helvetica, Arial;
+    /* font-family:  Lucida Grande, Helvetica Neue, Helvetica, Arial; */
     text-shadow: 0 1px 0px rgba(0,0,0,0.4);
     font-weight: normal;
 }
@@ -423,7 +423,7 @@ added css 20 Aug, @victor */
     text-align: center;
     text-transform: none;
     font-size: 1em;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    /* font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; */
     font-weight: 200;
     border: 1px solid #d0d0d0;
     color: #474747;
@@ -442,7 +442,7 @@ added css 20 Aug, @victor */
     position: relative;
     text-align: center;
     vertical-align: middle;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    /* font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; */
     font-weight: 200;
     font-size: 2.1em;
     display: block;
@@ -682,4 +682,8 @@ table.tablesorter thead tr .headerSortDown, table.tablesorter thead tr .headerSo
 
 .appointments-field-customer_gcal {
     margin-left: 10px;
+}
+
+* {
+    font-family: "Courier", Courier, monospace;
 }
