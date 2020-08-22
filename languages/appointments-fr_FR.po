@@ -5962,7 +5962,7 @@ msgid "Confirmation"
 msgstr "Confirmation"
 
 #: includes/shortcodes/class-app-shortcode-confirmation.php:13
-msgid "Please check the appointment details below and confirm:"
+msgid "Please confirm your appointment:"
 msgstr ""
 "Merci de vérifier les détails du rendez-vous ci-dessous et de confirmer :"
 
@@ -6082,7 +6082,7 @@ msgid "Google Cal label"
 msgstr "Mot pour Google Cal"
 
 #: includes/shortcodes/class-app-shortcode-confirmation.php:73
-msgid "Access Google Calendar and submit appointment"
+msgid "Add to personal Google Calendar"
 msgstr "Accéder à Google Calendar et soumettre un rendez-vous"
 
 #: includes/shortcodes/class-app-shortcode-confirmation.php:74
@@ -6741,7 +6741,7 @@ msgid "Providers"
 msgstr "Créateurs"
 
 #: includes/shortcodes/class-app-shortcode-service-providers.php:24
-msgid "Please choose a service provider:"
+msgid "Please select a provider:"
 msgstr "Choisir un prestataire SVP :"
 
 #: includes/shortcodes/class-app-shortcode-service-providers.php:25

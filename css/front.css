@@ -679,3 +679,7 @@ table.tablesorter thead tr .headerSortDown, table.tablesorter thead tr .headerSo
 .appointments-list table td.free {
     background-color:#449e74 !important;
 }
+
+.appointments-field-customer_gcal {
+    margin-left: 10px;
+}

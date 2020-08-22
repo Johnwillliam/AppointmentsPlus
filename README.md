@@ -595,7 +595,7 @@ _select_
 
 *   Text above the select menu.
 *   Default: “Please select a service”
-*   Example: [app_service_providers select=”Please choose a service provider:”]
+*   Example: [app_service_providers select=”Please select a provider:”]
 
 _empty_option_
 
@@ -712,8 +712,8 @@ This shortcode is always required to complete an appointment.
 _title_
 
 *   Text above fields.
-*   Default: “Please check the appointment details below and confirm:”
-*   Example: [app_confirmation title=”Please check the appointment details below and confirm:”]
+*   Default: “Please confirm your appointment:”
+*   Example: [app_confirmation title=”Please confirm your appointment:”]
 
 _button_text_
 
@@ -767,5 +767,5 @@ _gcal_
 
 *   Text that will be displayed beside Google Calendar checkbox.
 *   Default: “Open Google Calendar and submit appointment”
-*   Example: [app_confirmation gcal=”Access Google Calendar and submit appointment”]
+*   Example: [app_confirmation gcal=”Add to personal Google Calendar”]
 

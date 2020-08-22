@@ -21,7 +21,7 @@ class App_Shortcode_ServiceProviders extends App_Shortcode {
 			'select' => array(
 				'type' => 'text',
 				'name' => __( 'Title', 'appointments' ),
-				'value' => __('Please choose a service provider:', 'appointments'),
+				'value' => __('Please select a provider:', 'appointments'),
 				'help' => __('Text above the select menu. Default: "Please select a service"', 'appointments'),
 			),
 			'empty_option' => array(

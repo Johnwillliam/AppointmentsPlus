@@ -10,8 +10,8 @@ class App_Shortcode_Confirmation extends App_Shortcode {
 			'title' => array(
 				'type' => 'text',
 				'name' => __( 'Title', 'appointments' ),
-				'value' => sprintf( '<h3>%s</h3>', esc_html__( 'Please check the appointment details below and confirm:', 'appointments' ) ),
-				'help' => __( 'Text above fields. Default: "Please check the appointment details below and confirm:"', 'appointments' ),
+				'value' => sprintf( '<h3>%s</h3>', esc_html__( 'Please confirm your appointment:', 'appointments' ) ),
+				'help' => __( 'Text above fields. Default: "Please confirm your appointment:"', 'appointments' ),
 			),
 			'button_text' => array(
 				'type' => 'text',
@@ -70,8 +70,8 @@ class App_Shortcode_Confirmation extends App_Shortcode {
 			'gcal' => array(
 				'type' => 'text',
 				'name' => __( 'Google Cal label', 'appointments' ),
-				'value' => __( 'Access Google Calendar and submit appointment','appointments' ),
-				'help' => __( 'Text that will be displayed beside Google Calendar checkbox. Default: "Open Google Calendar and submit appointment"', 'appointments' ),
+				'value' => __( 'Add to personal Google Calendar','appointments' ),
+				'help' => __( 'Text that will be displayed beside Google Calendar checkbox. Default: "Add to personal Google Calendar"', 'appointments' ),
 			),
 		);
 	}
@@ -181,14 +181,14 @@ class App_Shortcode_Confirmation extends App_Shortcode {
 							</div>
 							<div class="appointments-note-field form-group" style="display:none">
 								<label for="InputNote"><?php echo $args['note']; ?> *</label>
-								<input type="note" class="appointments-note-field-entry form-control" id="<?php echo esc_attr( apply_filters( 'app-shortcode-confirmation-address_field_id', 'appointments-field-customer_address' ) ); ?>" placeholder="Enter address">
+								<input type="note" class="appointments-note-field-entry form-control" id="<?php echo esc_attr( apply_filters( 'app-shortcode-confirmation-address_field_id', 'appointments-field-address_field_id' ) ); ?>" placeholder="Enter address">
 							</div>
 							<div class="appointments-address-field form-group" style="display:none">
 								<label for="InputAdress"><?php echo $args['address']; ?> *</label>
 								<input type="address" class="appointments-address-field-entry form-control" id="<?php echo esc_attr( apply_filters( 'app-shortcode-confirmation-note_field_id', 'appointments-field-customer_note' ) ); ?>" placeholder="Enter notes">
 							</div>
 							<div class="appointments-gcal-field form-group" style="display:none">
-								<label for="InputAdress"><?php echo $appointments->gcal_image; ?> <?php echo $args['gcal']; ?></label>
+								<label for="app-shortcode-confirmation-gcal_field_id"><?php echo $appointments->gcal_image; ?> <?php echo $args['gcal']; ?></label>
 								<input class="appointments-gcal-field-entry form-check-input" type="checkbox" value="<?php echo $gcal_checked; ?>" id="<?php echo esc_attr( apply_filters( 'app-shortcode-confirmation-gcal_field_id', 'appointments-field-customer_gcal' ) ); ?>">							
 							</div>
 						</form>
