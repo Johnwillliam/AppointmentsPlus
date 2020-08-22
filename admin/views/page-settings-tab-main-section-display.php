@@ -37,6 +37,7 @@
 					<label>
 						<span> <?php echo $name ?>: </span>
 								<span>
+									<input id="colorpicker_input" type="color" style='opacity:0;position:absolute;'/>
 									<a href="javascript:void(0)" class="pickcolor <?php echo $class ?> hide-if-no-js" <?php if ( @$options['color_set'] != 0 ) {
 										echo 'style="background-color:#' . $appointments->get_preset( $class, $options['color_set'] ) . '"'; } ?>>
 									</a>

@@ -28,30 +28,35 @@ jQuery( document ).ready( function( $ ) {
     var colorpicker = $('.colorpicker_input');
     colorpicker.each(function () {
         var id = this.id;
-        $('#' + id).ColorPicker({
-                onSubmit: function (hsb, hex, rgb, el) {
-                    $(el).val(hex);
-                    $(el).ColorPickerHide();
-                },
-                onBeforeShow: function () {
-                    $(this).ColorPickerSetColor(this.value);
-                },
-                onChange: function (hsb, hex, rgb) {
-                    var element = $('#' + id);
-                    element.val(hex);
-                    element.parent().find('a.pickcolor').css('background-color', '#' + hex);
-                }
-            })
-            .bind('keyup', function () {
-                $(this).ColorPickerSetColor(this.value);
-            });
+        $('#' + id).change(function(e){
+            var value = e.target.value;
+            value = value.replace(/[^a-fA-F0-9]/, '');
+            $(this).parent().find('pickcolor').css('background-color', '#' + value);
+        });
+        // $('#' + id).ColorPicker({
+        //         onSubmit: function (hsb, hex, rgb, el) {
+        //             $(el).val(hex);
+        //             $(el).ColorPickerHide();
+        //         },
+        //         onBeforeShow: function () {
+        //             $(this).ColorPickerSetColor(this.value);
+        //         },
+        //         onChange: function (hsb, hex, rgb) {
+        //             var element = $('#' + id);
+        //             element.val(hex);
+        //             element.parent().find('a.pickcolor').css('background-color', '#' + hex);
+        //         }
+        //     })
+        //     .bind('keyup', function () {
+        //         $(this).ColorPickerSetColor(this.value);
+        //     });
     });
-    colorpicker.keyup(function () {
-        var a = $(this).val();
-        a = a.replace(/[^a-fA-F0-9]/, '');
-        if (a.length === 3 || a.length === 6)
-            $(this).parent().find('a.pickcolor').css('background-color', '#' + a);
-    });
+    // colorpicker.keyup(function () {
+    //     var a = $(this).val();
+    //     a = a.replace(/[^a-fA-F0-9]/, '');
+    //     if (a.length === 3 || a.length === 6)
+    //         $(this).parent().find('a.pickcolor').css('background-color', '#' + a);
+    // });
 
     /**
      * Check Services Provided on Appointments Settings page

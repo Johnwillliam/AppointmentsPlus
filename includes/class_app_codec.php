@@ -89,7 +89,7 @@ abstract class App_Template {
 	}
 
 	public static function get_default_confirmation_message() {
-		return 'Dear CLIENT,
+		return __('Dear CLIENT,
 
 We are pleased to confirm your appointment for SITE_NAME.
 
@@ -101,11 +101,11 @@ SERVICE_PROVIDER will assist you for this service.
 
 Kind regards,
 SITE_NAME
-';
+','appointments' ));
 	}
 
 	public static function get_default_reminder_message() {
-		return 'Dear CLIENT,
+		return __('Dear CLIENT,
 
 We would like to remind you of your appointment with SITE_NAME.
 
@@ -117,11 +117,11 @@ SERVICE_PROVIDER will assist you for this service.
 
 Kind regards,
 SITE_NAME
-';
+','appointments' ));
 	}
 
 	public static function get_default_removal_notification_message() {
-		return 'Dear CLIENT,
+		return __('Dear CLIENT,
 
 We would like to inform you that your appointment with SITE_NAME on DATE_TIME has been removed.
 
@@ -131,7 +131,7 @@ Date and time: DATE_TIME
 
 Kind regards,
 SITE_NAME
-';
+','appointments' );
 	}
 
 	public static function get_default_removal_notification_subject() {

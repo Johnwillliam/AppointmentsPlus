@@ -3,7 +3,7 @@
 Plugin Name: Appointments+
 Description: Lets you accept appointments from front end and manage or create them from admin side.
 Plugin URI: http://premium.wpmudev.org/project/appointments-plus/
-Version: 2.5.7
+Version: 2.5.8
 Author: WPMU DEV / Michael T
 Author URI: http://premium.wpmudev.org/
 Textdomain: appointments
@@ -1965,8 +1965,8 @@ if ( ! class_exists( 'Appointments' ) ) {
 				'gcal_location'				=> '',
 				'color_set'					=> 1,
 				'free_color'				=> '48c048',
-				'busy_color'				=> 'ffffff',
-				'notpossible_color'			=> 'ffffff',
+				'busy_color'				=> 'FF0000',
+				'notpossible_color'			=> 'FF0000',
 				'make_an_appointment'		=> '',
 				'ask_name'					=> '1',
 				'ask_email'					=> '1',
@@ -1978,7 +1978,7 @@ if ( ! class_exists( 'Appointments' ) ) {
 				'payment_required'			=> 'no',
 				'percent_deposit'			=> '',
 				'fixed_deposit'				=> '',
-				'currency'					=> 'USD',
+				'currency'					=> 'EUR',
 				'mode'						=> 'sandbox',
 				'merchant_email'			=> '',
 				'return'					=> 1,
