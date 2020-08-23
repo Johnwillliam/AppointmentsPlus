@@ -180,17 +180,6 @@ if ( ! class_exists( 'App_Shortcode_Monthly_Schedule' ) ) {
 				$params['worker_id'] = (int)$_REQUEST["app_provider_id"];
 				$args['worker'] = $params['worker_id'];				
             }
-            /*
-			else{
-				if( is_array( $workers_by_service ) && ! empty( $workers_by_service ) ){
-					$params['worker_id'] = $workers_by_service[0]->ID;
-
-					if( isset( $_REQUEST["app_provider_id"] ) ){
-						$_REQUEST["app_provider_id"] = $_GET["app_provider_id"] = $params['worker_id'];
-					}
-				}	
-            }
-             */
 
 			// Force a date
 			if ( $args['date'] && !isset( $_GET["wcalendar"] ) ) {
@@ -263,7 +252,7 @@ if ( ! class_exists( 'App_Shortcode_Monthly_Schedule' ) ) {
 				'widget'           => $params['widget'],
 				'hide_today_times' => $params['hide_today_times']
 			);
-
+			$monthname = pply_filters( 'app-shortcodes-monthly_schedule-title', $params['title'], $args );
 			ob_start();
 			?>
 			<div class="appointments-wrapper" id="appointments-wrapper">
@@ -275,7 +264,7 @@ if ( ! class_exists( 'App_Shortcode_Monthly_Schedule' ) ) {
 							'select' => $required_service_message,
 					) ) ?>
 				<?php else: ?>
-					<?php echo apply_filters( 'app-shortcodes-monthly_schedule-title', $params['title'], $args ); ?>
+					
 					<?php if ( is_user_logged_in() || 'yes' != $options["login_required"] ): ?>
 						<?php if ( $params['logged'] ): ?>
 							<div class='appointments-instructions'><?php echo $params['logged']; ?></div>
@@ -292,7 +281,7 @@ if ( ! class_exists( 'App_Shortcode_Monthly_Schedule' ) ) {
 						<?php endif; ?>
 					<?php endif; ?>
 					<div class="appointments-list">
-						<?php echo appointments_monthly_calendar( $params['time'], $cal_args ); ?>
+						<?php echo appointments_monthly_calendar( $params['time'], $cal_args, $monthname ); ?>
 					</div>
 				<?php endif; ?>
 			</div>
