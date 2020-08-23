@@ -631,7 +631,7 @@ table.tablesorter thead tr .headerSortDown, table.tablesorter thead tr .headerSo
 }
 
 .app_monthly_schedule_wrapper table {
-    width: 350px;
+    min-width: 450px;
 }
 
 .app_monthly_schedule_wrapper table tbody {
@@ -662,6 +662,6 @@ table.tablesorter thead tr .headerSortDown, table.tablesorter thead tr .headerSo
     text-align-last: left;
 }
 
-.app_select_workers .app_select_services {
-    min-width: 250px;
+#app_select_workers #app_select_services {
+    min-width: 250px !important;
 }
