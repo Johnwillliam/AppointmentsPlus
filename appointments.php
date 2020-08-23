@@ -3,7 +3,7 @@
 Plugin Name: Appointments+
 Description: Lets you accept appointments from front end and manage or create them from admin side.
 Plugin URI: http://premium.wpmudev.org/project/appointments-plus/
-Version: 2.5.8
+Version: 2.5.9
 Author: WPMU DEV / Michael T
 Author URI: http://premium.wpmudev.org/
 Textdomain: appointments
@@ -1799,7 +1799,8 @@ if ( ! class_exists( 'Appointments' ) ) {
 			wp_enqueue_script( 'jquery-tablesorter', $this->plugin_url . '/js/jquery.tablesorter.min.js', array( 'jquery' ), $this->version );
 			add_action( 'wp_footer', array( &$this, 'wp_footer' ) );	// Publish plugin specific scripts in the footer
 
-			wp_enqueue_script( 'bootstrap-bundle-min', $this->plugin_url . '/js/bootstrap.bundle.min.js', array( 'jquery' ));
+			wp_enqueue_script( 'bootstrap-js-bundle-min', $this->plugin_url . '/js/bootstrap.bundle.min.js', array( 'jquery' ));
+			wp_enqueue_style( 'bootstrap-css-min', $this->plugin_url. '/css/bootstrap.min.css', array(), $this->version );
 
 			// TODO: consider this
 			wp_enqueue_script( 'app-js-check', $this->plugin_url . '/js/js-check.js', array( 'jquery' ), $this->version );
