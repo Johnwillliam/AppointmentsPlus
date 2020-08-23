@@ -510,7 +510,7 @@ function apppointments_is_range_busy( $start, $end, $args = array() ) {
  *
  * @return mixed|string|void
  */
-function appointments_monthly_calendar( $timestamp = false, $args = array(), $monthname ) {
+function appointments_monthly_calendar( $timestamp = false, $args = array(), $monthname = null ) {
 	$appointments = appointments();
 	$options = appointments_get_options();
 	$defaults = array(
