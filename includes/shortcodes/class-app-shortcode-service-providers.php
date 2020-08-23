@@ -140,7 +140,7 @@ class App_Shortcode_ServiceProviders extends App_Shortcode {
 			?>
 			<div class="app_workers">
 				<div class="card">
-					<div class="card-body">
+					<div class="card-body" id="card-body-service-providers">
 						<div class="app_workers_dropdown">
 							<div class="app_workers_dropdown_title" id="app_workers_dropdown_title">
 								<?php echo $args['select']; ?>
