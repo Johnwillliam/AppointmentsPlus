@@ -654,10 +654,23 @@ table.tablesorter thead tr .headerSortDown, table.tablesorter thead tr .headerSo
 }
 
 .modal-dialog {
-    text-align: justify;
     text-align-last: left;
 }
 
-.app_select_workers .app_select_services {
-    min-width: 250px !important;
+@media all and (max-width: 600px) and (orientation:landscape) 
+{
+    select#app_select_workers {
+        width: 250px !important;
+    }
+    
+    select#app_select_services {
+        width: 250px !important;
+    }
+}
+
+@media all and (min-width: 600px) and (orientation:landscape) 
+{
+    select#app_select_workers {
+        min-width: 250px !important;
+    }
 }
