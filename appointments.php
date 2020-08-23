@@ -3,7 +3,7 @@
 Plugin Name: Appointments+
 Description: Lets you accept appointments from front end and manage or create them from admin side.
 Plugin URI: http://premium.wpmudev.org/project/appointments-plus/
-Version: 2.6.2
+Version: 2.6.3
 Author: WPMU DEV / Michael T
 Author URI: http://premium.wpmudev.org/
 Textdomain: appointments
@@ -780,13 +780,15 @@ if ( ! class_exists( 'Appointments' ) ) {
 			$excerpt_length = apply_filters( 'app_excerpt_length', 55 );
 			$excerpt_more = apply_filters( 'app_excerpt_more', ' &hellip; <a href="'. esc_url( get_permalink( $page->ID ) ) . '" target="_blank">' . __( 'More information <span class="meta-nav">&rarr;</span>', 'appointments' ) . '</a>' );
 			$text = wp_trim_words( $text, $excerpt_length, $excerpt_more );
-
 			if ( $show_thumb_holder ) {
 				// @TODO Little crap :( to avoid so many queries when there are many services
 				$thumb = '<div class="appointments-service-thumb appointments-service-thumb-' . absint( $page_id ) . '" data-page="' . absint( $page_id ) . '"></div>';
 			} else {
 				$thumb = $this->get_thumbnail( $page_id, $thumb_size, $thumb_class, $worker_id );
 			}
+
+			//Removed preview text of page, only returns page url now
+			$text = '<a href="'. esc_url( get_permalink( $page->ID ) ) . '" target="_blank">' . __( 'More information <span class="meta-nav">&rarr;</span>', 'appointments' ) . '</a>' ;
 
 			return apply_filters( 'app_excerpt', $thumb. $text, $page_id, $worker_id );
 		}

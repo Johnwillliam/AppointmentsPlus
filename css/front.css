@@ -657,8 +657,7 @@ table.tablesorter thead tr .headerSortDown, table.tablesorter thead tr .headerSo
     text-align-last: left;
 }
 
-@media all and (max-width: 600px) and (orientation:landscape) 
-{
+@media screen and (max-width: 500px) {
     select#app_select_workers {
         width: 250px !important;
     }
@@ -668,8 +667,7 @@ table.tablesorter thead tr .headerSortDown, table.tablesorter thead tr .headerSo
     }
 }
 
-@media all and (min-width: 600px) and (orientation:landscape) 
-{
+@media all and (min-width: 500px) {
     select#app_select_workers {
         min-width: 250px !important;
     }
