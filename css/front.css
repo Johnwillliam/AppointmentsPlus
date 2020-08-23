@@ -667,10 +667,10 @@ table.tablesorter thead tr .headerSortDown, table.tablesorter thead tr .headerSo
 
 @media screen and (max-width: 500px) {
     #app_select_workers {
-        width: 250px !important;
+        width: 300px !important;
     }
     
     #app_select_services {
-        width: 250px !important;
+        width: 200px !important;
     }
 }
