@@ -173,7 +173,7 @@ class App_Shortcode_Confirmation extends App_Shortcode {
 							</div>
 							<div class="appointments-address-field form-group" style="display:none">
 								<label for="InputAdress"><?php echo $args['address']; ?> *</label>
-								<input type="address" class="appointments-address-field-entry form-control" id="<?php echo esc_attr( apply_filters( 'app-shortcode-confirmation-address_field_id', 'appointments-field-customer_address' ) ); ?>" placeholder="Enter address">
+								<input type="address" class="appointments-address-field-entry form-control" id="<?php echo esc_attr( apply_filters( 'app-shortcode-confirmation-customer_address', 'appointments-field-customer_address' ) ); ?>" placeholder="Enter address">
 							</div>
 							<div class="appointments-city-field form-group" style="display:none">
 								<label for="InputCity"><?php echo $args['city']; ?> *</label>
@@ -181,11 +181,7 @@ class App_Shortcode_Confirmation extends App_Shortcode {
 							</div>
 							<div class="appointments-note-field form-group" style="display:none">
 								<label for="InputNote"><?php echo $args['note']; ?> *</label>
-								<input type="note" class="appointments-note-field-entry form-control" id="<?php echo esc_attr( apply_filters( 'app-shortcode-confirmation-address_field_id', 'appointments-field-address_field_id' ) ); ?>" placeholder="Enter address">
-							</div>
-							<div class="appointments-address-field form-group" style="display:none">
-								<label for="InputAdress"><?php echo $args['address']; ?> *</label>
-								<input type="address" class="appointments-address-field-entry form-control" id="<?php echo esc_attr( apply_filters( 'app-shortcode-confirmation-note_field_id', 'appointments-field-customer_note' ) ); ?>" placeholder="Enter notes">
+								<input type="note" class="appointments-note-field-entry form-control" id="<?php echo esc_attr( apply_filters( 'app-shortcode-confirmation-note_field_id', 'appointments-field-customer_note' ) ); ?>" placeholder="Enter notes">
 							</div>
 							<div class="appointments-gcal-field form-group" style="display:none">
 								<label for="app-shortcode-confirmation-gcal_field_id"><?php echo $appointments->gcal_image; ?> <?php echo $args['gcal']; ?></label>

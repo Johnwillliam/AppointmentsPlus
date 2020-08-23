@@ -117,7 +117,7 @@ SERVICE_PROVIDER will assist you for this service.
 
 Kind regards,
 SITE_NAME
-','appointments' ));
+','appointments' );
 	}
 
 	public static function get_default_removal_notification_message() {

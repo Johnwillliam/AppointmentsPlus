@@ -724,7 +724,7 @@ if ( ! class_exists( 'Appointments' ) ) {
 			);
 		}
 
-		/**
+	 /**
 	 * Return a default color for a selected box class
 	 * @return string
 	 */
@@ -732,8 +732,8 @@ if ( ! class_exists( 'Appointments' ) ) {
 			$presets = array(
 			1 => array(
 				'free' => '449e74',
-				'busy' => 'ffffff',
-				'notpossible' => 'ffffff',
+				'busy' => 'DC143C',
+				'notpossible' => 'DC143C',
 			),
 			2 => array(
 	            'free' => '73ac39',
