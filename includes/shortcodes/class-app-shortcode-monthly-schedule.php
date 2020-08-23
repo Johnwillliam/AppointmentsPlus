@@ -252,7 +252,7 @@ if ( ! class_exists( 'App_Shortcode_Monthly_Schedule' ) ) {
 				'widget'           => $params['widget'],
 				'hide_today_times' => $params['hide_today_times']
 			);
-			$monthname = pply_filters( 'app-shortcodes-monthly_schedule-title', $params['title'], $args );
+			$monthname = apply_filters( 'app-shortcodes-monthly_schedule-title', $params['title'], $args );
 			ob_start();
 			?>
 			<div class="appointments-wrapper" id="appointments-wrapper">
