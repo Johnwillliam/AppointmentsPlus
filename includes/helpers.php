@@ -510,7 +510,7 @@ function apppointments_is_range_busy( $start, $end, $args = array() ) {
  *
  * @return mixed|string|void
  */
-function appointments_monthly_calendar( $timestamp = false, $args = array() ) {
+function appointments_monthly_calendar( $timestamp = false, $args = array(), $monthname ) {
 	$appointments = appointments();
 	$options = appointments_get_options();
 	$defaults = array(
@@ -554,7 +554,7 @@ function appointments_monthly_calendar( $timestamp = false, $args = array() ) {
 		<?php do_action( 'appointments_monthly_schedule_before_table', '' ); ?>
 
 		<table width='100%' <?php echo $tbl_class; ?>>
-			<?php echo _appointments_get_table_meta_row_monthly( 'thead', $args['long'] ); ?>
+			<?php echo _appointments_get_table_meta_row_monthly( 'thead', $args['long'], strval($monthname) ); ?>
 			<tbody>
 			<?php do_action( 'appointments_monthly_schedule_before_first_row', '' ); ?>
 
@@ -877,7 +877,7 @@ function _appointments_get_table_meta_row( $the_week, $long = true ) {
  *
  * @return string
  */
-function _appointments_get_table_meta_row_monthly( $which, $long ) {
+function _appointments_get_table_meta_row_monthly( $which, $long, $monthcellname = null ) {
 	$appointments = appointments();
 	$start_of_week = appointments_week_start();
 	if ( ! $long ) {
@@ -890,6 +890,11 @@ function _appointments_get_table_meta_row_monthly( $which, $long ) {
 	$day_names_array = array_merge( $day_names_array, $extracted );
 
 	$cells = '<th>' . join( '</th><th>', $day_names_array ) . '</th>';
+	if($monthcellname != null)
+	{
+		$monthcell = '<tr><th colspan="7" class="app_monthly_schedule-month-cell">' . $monthcellname . '</th></tr>';
+		return "<{$which}>{$monthcell}<tr>{$cells}</tr></{$which}>";
+	}
 	return "<{$which}><tr>{$cells}</tr></{$which}>";
 }
 

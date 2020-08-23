@@ -654,15 +654,17 @@ table.tablesorter thead tr .headerSortDown, table.tablesorter thead tr .headerSo
 }
 
 #app_select_workers {
-    min-width: 250px !important;
+    min-width: 150px !important;
 }
 
-#card-body-services {
+.card-body-services {
     height: 180px;
+    background-color: lightgray !important;
 }
 
-#card-body-service-providers {
+.card-body-service-providers {
     height: 180px;
+    background-color: lightgray !important;
 }
 
 @media screen and (max-width: 500px) {
@@ -673,4 +675,16 @@ table.tablesorter thead tr .headerSortDown, table.tablesorter thead tr .headerSo
     #app_select_services {
         width: 300px !important;
     }
+}
+
+.app_monthly_schedule-month-cell {
+    background-color: lightgray !important;
+}
+
+.no-left-border {
+    background-color: lightgray !important;
+}
+
+.no-right-border {
+    background-color: lightgray !important;
 }
